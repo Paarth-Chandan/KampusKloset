@@ -1,60 +1,108 @@
 # KampusKloset
 
-KampusKloset is a sleek, user-friendly e-commerce website built using React. It offers an easy way for users to browse, search, and explore various products. This app utilizes the **Fake Store API** to fetch product details, including images, pricing, and categories, providing users with a seamless online shopping experience. 
+KampusKloset is a sleek, user-friendly e-commerce website built using React. It offers an easy way for users to browse, search, and explore various products. This app utilizes the **Fake Store API** to fetch product details, including images, pricing, and categories. In addition, KampusKloset provides secure **login and signup** functionality through a custom backend using **MongoDB, Express.js, and JWT**.  
 
-## Features
+## Features  
 
-- **Product Search and Filtering**: Users can search for products and filter them based on categories.  
-- **Product Details Page**: Displays detailed information about each product, including price, description, and ratings.  
+- **User Authentication**: Users can securely **sign up** and **log in** with credentials.  
+- **JWT-based Authentication**: User sessions are managed using **JSON Web Tokens (JWT)**.    
+- **Product Details Page**: Displays detailed information about each product, including price and description  
 - **Cart Functionality**: Users can add items to the cart, view the total, and proceed to checkout.  
 - **Responsive Design**: The website ensures a smooth experience across all devices (desktop, tablet, and mobile).  
-- **Error Handling**: Handles invalid search queries or network issues with user-friendly error messages.  
+- **Error Handling**: Handles invalid search queries, failed logins, or network issues with user-friendly error messages.  
 
-## Screenshots
+## Screenshots  
 
 <!-- Replace with actual screenshots later -->
 
+---
 
 ## Getting Started  
-Follow these steps to set up the project on your local machine for development and testing.
+
+Follow these steps to set up the project on your local machine for development and testing.  
 
 ### Prerequisites  
-Ensure you have the following installed:
+Ensure you have the following installed:  
 - **Node.js**  
-- **npm** (Node Package Manager)
+- **npm** (Node Package Manager)  
+- **MongoDB** (Make sure MongoDB is installed and running locally or use **MongoDB Atlas**)  
 
 ### Installation  
+
+#### Frontend Setup  
 1. **Clone the repository**:  
-   ```bash
+   ```bash  
    git clone https://github.com/your-username/kampuskloset.git  
    cd kampuskloset  
-   ```
+   ```  
 
 2. **Install dependencies**:  
-   ```bash
+   ```bash  
    npm install  
-   ```
+   ```  
 
-3. **Start the development server**:  
-   ```bash
+3. **Start the frontend development server**:  
+   ```bash  
    npm start  
    ```  
-   The app will be available at **http://localhost:3000**.
+   The frontend will be available at **http://localhost:3000**.  
+
+#### Backend Setup  
+1. Navigate to the `backend` directory:  
+   ```bash  
+   cd backend  
+   ```  
+
+2. **Install backend dependencies**:  
+   ```bash  
+   npm install  
+   ```  
+
+3. **Configure environment variables**:  
+   Create a `.env` file in the `backend` directory with the following variables:  
+   ```bash  
+   MONGODB_URI=<your-mongodb-connection-string>  
+   JWT_SECRET=<your-secret-key>  
+   PORT=4000  
+   ```  
+
+4. **Start the backend server**:  
+   ```bash  
+   npm run start  
+   ```  
+   The backend will run on **http://localhost:4000**.  
+
+---
 
 ## Usage  
 
 - Open the website in your browser.  
-- Browse through the available products on the homepage or use the search bar to find specific items.  
+- **Sign up or log in** to your account using the authentication feature.    
 - Click on a product to view detailed information on the product details page.  
 - Add items to your cart, view the total, and proceed to checkout.  
 
+---
+
 ## API  
-KampusKloset fetches product data from the **Fake Store API**:  
-[https://fakestoreapi.com/  ](https://fakestoreapi.com/)
+KampusKloset uses the **Fake Store API** to fetch product data:  
+[https://fakestoreapi.com/](https://fakestoreapi.com/)  
+
+---
 
 ## Technologies Used  
-- HTML, CSS(using Tailwind CSS), JavaScript & React.js
-- **API**: Fake Store API    
+
+### Frontend  
+- HTML, CSS (using **Tailwind CSS**), JavaScript, React.js  
+
+### Backend  
+- **Node.js** with **Express.js** for backend logic  
+- **MongoDB** for storing user data  
+- **JWT (JSON Web Tokens)** for secure authentication  
+
+---
 
 ## Contributing  
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.  
+
+---
