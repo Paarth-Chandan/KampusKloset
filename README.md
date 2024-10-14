@@ -14,9 +14,9 @@ KampusKloset is a sleek, user-friendly e-commerce website built using React. It 
 
 ## Video 
 
-<!-- Replace with actual screenshots later -->
 
-https://github.com/user-attachments/assets/deb700df-5490-4257-a597-57e16564d004
+
+https://github.com/user-attachments/assets/e6559ba9-965e-4a78-9e72-e67e8e006b90
 
 
 ---
